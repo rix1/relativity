@@ -1,0 +1,22 @@
+:root {
+  --color-red-50: #e23b3e;
+  --color-red-45: #f24e53;
+  --color-red-5: #ffe6e8;
+}
+
+*::selection {
+  background-color: var(--color-red-5);
+  color: var(--color-red-50);
+}
+
+a:visited {
+  color: var(--color-red-50);
+}
+
+p code {
+  border-radius: 0.2rem;
+  color: var(--color-red-45);
+  background-color: var(--color-red-5);
+  padding: 2px 0.4rem;
+  font-size: 0.8em;
+}
