@@ -5,7 +5,7 @@ import createInlineSVG from './createInlineSVG';
 
 type StyledRangeProps = {|
   sliderIcons: string[],
-  hasChanged: boolean,
+  hasChanged?: boolean,
   idleSlider?: string,
   value: number,
   max: number,

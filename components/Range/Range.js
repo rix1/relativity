@@ -29,7 +29,7 @@ type Props = {|
 |};
 
 const Range = (props: Props) => {
-  const [hasChanged, setHasChanged] = useState(false);
+  const [hasChanged, setHasChanged] = useState(props.hasChanged);
 
   function onChangeHandler(event) {
     const { onChange } = props;
