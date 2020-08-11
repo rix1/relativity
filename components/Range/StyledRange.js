@@ -50,7 +50,7 @@ const StyledRange = ({
           background-size: contain;
           background-repeat: no-repeat;
           border-radius: 100%;
-          cursor: pointer;
+          cursor: ew-resize;
           height: 2em;
           width: 2em;
           margin-top: -0.2em;
