@@ -10,9 +10,9 @@ type StyledRangeProps = {|
   value: number,
   max: number,
   min: number,
-  step: number,
+  step?: number,
   onChange: (SyntheticInputEvent<HTMLInputElement>) => void,
-  onBlur: (SyntheticFocusEvent<HTMLInputElement>) => void,
+  onBlur?: (SyntheticFocusEvent<HTMLInputElement>) => void,
 |};
 
 const StyledRange = ({
@@ -24,7 +24,7 @@ const StyledRange = ({
   step = 1,
   value,
   onChange,
-  onBlur,
+  onBlur = () => {},
 }: StyledRangeProps) => {
   const icon = hasChanged
     ? getArrayValueFromPercent(value, sliderIcons)

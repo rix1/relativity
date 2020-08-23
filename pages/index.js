@@ -1,22 +1,23 @@
 // @flow
-import React, { useState, memo, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { MDXProvider } from '@mdx-js/react';
 
+// $FlowFixMe
 import Content from '../articles/2020-07-09-lifetime.mdx';
 
 import Page from '../components/Page';
 import Range from '../components/Range/Range';
 
-type PProps = {
+type PProps = {|
   children: React$Node,
-};
+|};
 
-const P = ({ children, draft = false }: PProps) => (
-  <p className={`f6 f4-ns lh-copy measure center ${draft && 'gray'}`}>
+const P = ({ children, draft = false }: { ...PProps, draft: boolean }) => (
+  <p className={`f6 f4-ns lh-copy measure center ${draft ? 'gray' : ''}`}>
     {children}
   </p>
 );
-const Quote = ({ children, fontSize }: PProps) => (
+const Quote = ({ children, fontSize }: { ...PProps, fontSize: string }) => (
   <blockquote className={`ph0 measure-wide center ${fontSize}`}>
     <p className="fw9 lh-copy lh-title-ns">{children}</p>
   </blockquote>
@@ -26,7 +27,7 @@ const H2 = ({ children }: PProps) => (
   <h2 className="ph0 f4 f2-ns measure-narrow center">{children}</h2>
 );
 
-const Sidenote = ({ children }: PPRops) => (
+const Sidenote = ({ children }: PProps) => (
   <div className="bg-light-gray br2 gray pa3 f6 f4-ns lh-copy measure center">
     <p className="f6 mv0">[Side note]: {children}</p>
   </div>
