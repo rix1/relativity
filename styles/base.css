@@ -1,6 +1,8 @@
 :root {
+  --color-red-60: hsl(359, 74%, 46%);
   --color-red-50: #e23b3e;
   --color-red-45: #f24e53;
+  --color-purple-50: #8d4ef2;
   --color-red-5: #ffe6e8;
 }
 
@@ -9,8 +11,12 @@
   color: var(--color-red-50);
 }
 
-a:visited {
+a {
   color: var(--color-red-50);
+}
+
+a:visited {
+  color: var(--color-red-60);
 }
 
 p code {
@@ -19,4 +25,8 @@ p code {
   background-color: var(--color-red-5);
   padding: 2px 0.4rem;
   font-size: 0.8em;
+}
+
+.cover {
+  object-fit: cover;
 }
