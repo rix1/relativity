@@ -91,10 +91,6 @@ const Index = () => {
               , but not as often as I aspire to.
             </p>
           </blockquote>
-          {/* <p className="f4 fw9 lh-copy lh-title-ns measure">
-            I&apos;m currently having fun chasing the sun together with{' '}
-            <a href="https://twitter.com/@otovosolar">@otovosolar</a>.
-          </p> */}
         </div>
       </section>
       <hr className="mv5 bb-0 b--black-10" />
@@ -104,12 +100,12 @@ const Index = () => {
         <div className="flex flex-wrap ph0 ph0-m mw9-l center">
           {projects.map((project) => (
             <article
-              key={project.link}
+              key={project.title}
               className="w-100 w-50-m w-25-ns pa2-ns mb3">
-              <a href={project.link} className="ph2 ph0-ns link db">
+              <a href={project.link} className="ph2 ph0-ns db">
                 <h3 className="f5 f4-ns mb0 black-90">{project.title}</h3>
-                <h3 className="f4 fw4 mt2 black-60">{project.description} </h3>
               </a>
+              <h3 className="f4 fw4 mt2 black-60">{project.description} </h3>
               {project.repo && (
                 <a href={project.repo}>
                   <svg
