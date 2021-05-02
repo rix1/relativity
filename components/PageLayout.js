@@ -43,7 +43,7 @@ const PageLayout = ({
   footer = <Footer />,
 }: Props) => {
   return (
-    <div className="flex flex-column athelas pa5">
+    <div className="flex flex-column athelas pa5-ns pa3">
       {header}
       <div>{children}</div>
       {footer}
