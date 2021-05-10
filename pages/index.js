@@ -2,20 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Range from '../components/Range/Range';
-import Quote from '../components/Quote';
-import Text, { Highlight } from '../components/Text';
-import Heading from '../components/Heading';
-import Sidenote from '../components/Sidenote';
 import PageLayout from '../components/PageLayout';
-
-// const shortCodes = {
-//   p: Text,
-//   quote: Quote,
-//   h2: Heading.H2,
-//   LifeSlider,
-//   sidenote: Sidenote,
-// };
 
 const projects = [
   {

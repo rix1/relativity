@@ -11,10 +11,18 @@ const Text = ({ children }: Props) => {
 
 type HighlightProps = {
   children: React.Node,
+  background: string,
+  color: string,
 };
 
-export const Highlight = ({ children }: HighlightProps) => (
-  <span className="bg-black-90 lh-copy white pa1 tracked-tight">
+export const Highlight = ({
+  children,
+  background = '--color-red-10',
+  color = '--color-red-60',
+}: HighlightProps) => (
+  <span
+    className="lh-copy pa1 tracked-tight br1"
+    style={{ color: `var(${color})`, background: `var(${background})` }}>
     {children}
   </span>
 );

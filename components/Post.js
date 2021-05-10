@@ -5,7 +5,7 @@ import React, { Node } from 'react';
 import Heading from './Heading';
 import PageLayout from './PageLayout';
 import Quote from './Quote';
-import Sidenote from './Sidenote';
+import Footnote from './Footnote';
 import Text from './Text';
 
 type Props = {
@@ -18,7 +18,7 @@ const components = {
   p: Text,
   blockquote: Quote,
   h2: Heading.H2,
-  sidenote: Sidenote,
+  footnote: Footnote,
   hr: () => <hr className="mv5 measure bb-0 b--black-10" />,
 };
 

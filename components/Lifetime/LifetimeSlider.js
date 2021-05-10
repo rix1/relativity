@@ -2,13 +2,19 @@
 import * as React from 'react';
 import Range from '../Range/Range';
 
+const START_AGE = 27; // chosen to align the slider nicely
 const LifeSlider = () => {
-  const [age, setAge] = React.useState(27);
+  const [age, setAge] = React.useState(START_AGE);
   const handleChange = React.useCallback((val) => setAge(val), []);
-
+  const relativeAgeString =
+    age > START_AGE
+      ? `${START_AGE} + ${age - START_AGE}`
+      : `${START_AGE} - ${START_AGE - age}`;
   return (
     <div className="measure-wide f3 center mv5">
-      <pre className="silver f5">Age: {age}</pre>
+      <pre className="silver f5">
+        Age: {age === START_AGE ? age : relativeAgeString}
+      </pre>
       <Range
         sliderIcons={[
           '👶',

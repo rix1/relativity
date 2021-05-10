@@ -1,5 +1,6 @@
 import Post from '../../components/Post';
-import LifetimeSlider from '../../components/LifetimeSlider/LifetimeSlider';
+import LifetimeSlider from '../../components/Lifetime/LifetimeSlider';
+import CarTripExample from '../../components/Lifetime/CarTripExample';
 import InlineInput from '../../components/InlineInput';
 
 export const meta = {
@@ -16,82 +17,50 @@ export const meta = {
   createdAt: '2020-07-09T05:32:00.944Z',
 };
 
-When my sister got her first son in 2016 I joked with her: <i>What is it like
-waking up having never gone to sleep?</i> A seemingly silly question that is
-easy to ask, but very hard to make any sense of. Similarly, in a funeral we
-might think: <i>What is it like going to sleep, never to wake up again?</i>
-These two questions sets the boundaries for what we call life. Birth, a past
-experience no one remember, and death, a future experience we're experientially
-blind to.
+When my sister got her first son in 2016 I joked with her: <i>What is it like waking up having never gone to sleep?</i> A seemingly silly question that is easy to ask, but very hard to make any sense of. Similarly, in a funeral we might think: <i>What is it like going to sleep, never to wake up again?</i>
+These two questions touches the boundaries for what we call life. Birth, a past experience no one remember, and death, a future experience we're experientially blind to.
 
-The keywords here are <i>past</i> and <i>future</i>. Baked into the language
-of how we commonly talk about birth and death, lies the notion that the two
-concepts can be fixed on a timeline. This time period consitutes a lifetime
-for us human beings. It can be visualized as a line with three points (Birth,
+The keywords here are <i>past</i> and <i>future</i>. Baked into the language of how we commonly talk about our life, birth and death, lies the notion that the concepts can be fixed on a timeline. This timeline constitutes a lifetime for us human beings. It can be visualised as a line with three points (Birth,
 Present, and Death) which appropriately map to past, present and future.
 
 <LifetimeSlider />
 
-This is a pretty nice mental modal. It's easy and straight forward. It
-especially favours young people which seem to have most of their life in front
-of them. Using this model we can calculate lifetime as the distance between
-Birth and Death. Normal people call this distance <i>age</i>.
+This is a pretty nice mental modal <span id="footnote-1">[1]</span> It's easy and straight forward. Using this model we can calculate lifetime as the distance between Birth and Death. Normal people call this distance <i>age</i>.
 
-However simple, I belive that using <i>age</i> as a value to denote a lifetime
-is incorrect. During my time as a university student back in 2012, I realized
-this by looking at the phrase
+However simple, I belive that thinking of life that something you have <i>ahead of you</i> is slightly incorrect. It might be comforting to reassure someone with a feeling that they're "behind" that "Don't worry, you got most of your life in front of you". But strictly speaking, we really don't know.
 
-> "You got most of your life in front of you"
+If you think about it, no part of your life is in front of you. I believe that we are the sum of our <i>past</i> experiences and <i>present</i> sensations, but the <i>future</i> hasn't happened yet, so how can most of your life be there? This seems quite strange to me.
 
-If you think about it, no part of your life is in front of you. I believe that
-we are the sum of our <i>past</i> experiences and <i>present</i> sensations,
-but the <i>future</i> hasn't happened yet, so how can most of your life be
-there? This seemed very strange to me.
+I get what you're thinking: <i>"This is overly pedantic, very pessimistic and also kinda sad – stop it! The phrase is just a positive way of saying most of your life hasn't happened yet"</i>.
 
-<sidenote>
-  I recently read Lisa Feldman's book "How Emotions are Made". She made me
-  realize that humans are special in the way we predict and anticipate future
-  experiences, and that this is actually a critical part of how we craft our own
-  reality. In that sense, I guess a little bit of the future is part of your
-  life, but it's miniscule compared to everything that has ever happened to you.
-</sidenote>
+You might be right. But something happened when I challenged it: I started asking myself, if "life isn't some variable thing dependent of how old you are – is it fixed?". Of course it have to be: If I died this very second, then my life would be over, right? No future events, only past and present. So instead of
+thinking that life is something I have ahead of me, I'm living at the edge of death, aren't I? In fact, we all are.
 
-I get what you're thinking: <i>"This is overly pedantic and also very pessimistic – the phrase is just a
-positive way of saying most of your life hasn't happened yet"</i>
-. You might be right. But when I challenged it, something very strange happened.
-I started to realize that we could treat the concept of a lifetime as something more
-than a mere value. A variable of equal length independent of who's viewpoint you
-take. Previously, this wasn't as clear to me.
+Again, sorry if this hits you as very grim – it's not intended to. But it started to increasingly make sense while reflecting over my past experiences: Didn't time pass much slower when you were younger? I remember the dreaded car trips during summer vacation – they took forever! But when we finally arrived some 3
+hours later, it was just like time stood still. Those 8 weeks of vacation seemed like forever.
 
-Let's say you're <InlineInput /> years old.
+While the days were long when I was younger, these days time seem to be speeding up. In my mind, the cause of this effect becomes easier to spot after deleting the negative space of future lifetime from the mental model of my own life. In other words, is our experience of time related to the time spent on this earth? It certainly seem so.
+
+### Let's look at an example:
+
+<CarTripExample />
+
+Maybe this can be used to build empathy for people younger/older than yourself? If not, I just hope you found this interesting in some way or form and that it wasn't a waste of your time ✌️
+
+Got any feedback? Hit me up on Twitter, [@rix1](https://twitter.com/rix1). Thanks for reading!
 
 ---
 
-In this post I'll outline how think about the concept of a lifetime and
-explore some tools to make it easier to reason about.
+<footnote>
+  I originally started to ponder about this back in 2012. In 2015, I made an
+  attempt at creating a small CLI that made it possible to calculate the
+  experienced time between N people (<a href="https://github.com/rix1/time">source</a>).
+<br /><br />  
+In the time since, I've came back to thinking about this several times. Although
+not directly related, I suggest checking out "I Am a Strange Loop" from Douglas
+Hofstadter and "How Emotions Are Made" by Lisa Feldman Barrett if you found
+topic this interesting.
 
-<sidenote>
-  1: which is really hard to answer because we don't remember the experience of
-  waking up.
-  <br />
-  2: which is equally hard to answer because we have never experienced death
-  ourselves.
-</sidenote>
-
-<sidenote>
-  That being said, I think I have a better understanding of after reading "I Am
-  a Strange Loop" from Douglas Hofstadter and "How Emotions Are Made" by Lisa
-  Feldman Barrett. Worth checking out if you're into that thing.
-</sidenote>
-
----
-
-This relates to birth like the following question relates to death: "What is
-it like to go to sleep and never wake up again?".
-
-These are big questions, along the lines of "What's the purpose of it all?",
-and they have been pondering people for ages. But as with many questions, they
-might not be the right ones to be asked. And asking the wrong questions might
-cause a lot of harm
+</footnote>
 
 export default ({ children }) => <Post meta={meta}>{children}</Post>;
