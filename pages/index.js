@@ -79,7 +79,7 @@ const Index = () => {
               , but not as often as I aspire to.
             </p>
           </blockquote>
-          <div className="tc">
+          <div className="tc mt4">
             <SocialIcon
               bgColor="var(--color-barely-black)"
               url="https://twitter.com/rix1"
@@ -100,15 +100,20 @@ const Index = () => {
       </section>
       <hr className="mv5 bb-0 b--black-10" />
       <section className="cf w-100">
-        <h2 className="f4 f1-ns fw6 tc mb3">Sometimes, I make stuff:</h2>
-        <p className="tc mt0 mb5">But not all the time</p>
+        <h2 className="f4 f1-ns fw6 tc mb5">Sometimes, I make stuff:</h2>
         <div className="flex flex-wrap ph0 ph0-m mw9-l center">
           {projects.map((project) => (
             <article
               key={project.title}
               className="w-100 w-50-m w-25-ns pa2-ns mb3">
               <a href={project.link} className="ph2 ph0-ns db">
-                <h3 className="f5 f4-ns mb0 black-90">{project.title}</h3>
+                <h3
+                  className={[
+                    'f5 f4-ns mb0 black-90 fw6',
+                    project.link && 'underline',
+                  ].join(' ')}>
+                  {project.title}
+                </h3>
               </a>
               <h3 className="f4 fw4 mt2 black-60">{project.description} </h3>
               {project.repo && (
@@ -122,7 +127,7 @@ const Index = () => {
                     strokeWidth={2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="v-mid mr1">
+                    className="v-mid mr1 dib">
                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
                   </svg>
                   Repository

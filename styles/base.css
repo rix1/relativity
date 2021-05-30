@@ -9,6 +9,7 @@
   --color-red-10: hsl(358, 86%, 90%);
   --color-purple-50: #8d4ef2;
   --color-red-5: #ffe6e8;
+  --color-barely-black: #111827;
 }
 
 *::selection {
@@ -22,6 +23,11 @@ a {
 
 a:visited {
   color: var(--color-red-60);
+}
+
+html,
+body {
+  color: var(--color-barely-black);
 }
 
 p code {
