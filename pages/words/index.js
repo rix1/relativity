@@ -26,7 +26,7 @@ const ArticleOverview = ({ children }: Props) => {
                   </span>
                 )}
                 <h3 className="mv0 black-90">{meta.title}</h3>
-                <h3 className="f2 mt2 black-60">{meta.description} </h3>
+                <h3 className="f2 mt2 black-60">{meta.description}</h3>
               </a>
             </Link>
           </article>
