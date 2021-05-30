@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import PageLayout from '../components/PageLayout';
+import { SocialIcon } from 'react-social-icons';
 
 const projects = [
   {
@@ -78,6 +79,23 @@ const Index = () => {
               , but not as often as I aspire to.
             </p>
           </blockquote>
+          <div className="tc">
+            <SocialIcon
+              bgColor="var(--color-barely-black)"
+              url="https://twitter.com/rix1"
+              className="mr3"
+            />
+            <SocialIcon
+              bgColor="var(--color-barely-black)"
+              url="https://github.com/rix1"
+              className="mr3"
+            />
+            <SocialIcon
+              bgColor="var(--color-barely-black)"
+              url="https://www.linkedin.com/in/riix1/"
+              className="mr3"
+            />
+          </div>
         </div>
       </section>
       <hr className="mv5 bb-0 b--black-10" />
