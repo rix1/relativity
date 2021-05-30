@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --color-red-60: hsl(359, 74%, 46%);
   --color-red-50: #e23b3e;

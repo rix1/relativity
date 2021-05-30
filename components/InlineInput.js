@@ -14,7 +14,7 @@ const InlineInput = (
         border: none;
         border-bottom: ${theme.sizes.lineWidth} dotted gray;
         outline: none;
-        width: 1.5em;
+        width: 2em;
         margin-right: 0.5em;
         margin-left: 0.5em;
         text-align: right;

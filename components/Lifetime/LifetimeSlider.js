@@ -12,9 +12,9 @@ const LifeSlider = () => {
       : `${START_AGE} - ${START_AGE - age}`;
   return (
     <div className="measure-wide f3 center mv5">
-      <pre className="silver f5">
+      <span className="silver f5">
         Age: {age === START_AGE ? age : relativeAgeString}
-      </pre>
+      </span>
       <Range
         sliderIcons={[
           '👶',
@@ -36,9 +36,9 @@ const LifeSlider = () => {
         min={0}
       />
       <div className="flex silver f6">
-        <pre className="w-25">Birth</pre>
-        <pre className="mr-auto">Present</pre>
-        <pre className="w-10">Death</pre>
+        <span className="w-25">Birth</span>
+        <span className="mr-auto">Present</span>
+        <span className="w-10">Death</span>
       </div>
     </div>
   );

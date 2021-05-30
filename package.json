@@ -20,6 +20,7 @@
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@next/mdx": "^10.2.0",
+    "@tailwindcss/typography": "^0.4.0",
     "next": "^10.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "@otovo/eslint-config-otovo": "^3.0.0",
+    "autoprefixer": "^10.2.5",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
@@ -43,6 +45,8 @@
     "eslint-plugin-react": "^7.20.6",
     "flow-bin": "^0.132.0",
     "jest": "^26.4.2",
-    "prettier": "^2.0.5"
+    "postcss": "^8.2.15",
+    "prettier": "^2.0.5",
+    "tailwindcss": "^2.1.2"
   }
 }
