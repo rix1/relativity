@@ -10,7 +10,7 @@ const Header = ({}: HeaderProps) => (
       <a className="link">
         <img
           src="/first-thursday.jpg"
-          className="br-100 pa1 ba b--black-10 h3 w3 cover"
+          className="br-100 pa1 ba b--black-10 h3 w3 cover mx-auto"
           alt="avatar"
         />
         <h1 className="f5 f4-ns fw6 mid-gray ">Rix1</h1>
